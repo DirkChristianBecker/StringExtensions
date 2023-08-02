@@ -37,9 +37,9 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 ## Install libraries (if any) to <install_directory>/bin
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
-option(PLATFORM_BUILD_EXAMPLES "Build StringExtensions examples?" OFF)
+option(STRING_EXTENSIONS_BUILD_EXAMPLES "Build StringExtensions examples?" OFF)
 
 add_subdirectory(Source)
-if(${PLATFORM_BUILD_EXAMPLES})
+if(${STRING_EXTENSIONS_BUILD_EXAMPLES})
 	add_subdirectory(Examples)
 endif()
